@@ -64,6 +64,7 @@ class Question(models.Model):
     def __str___(self):
         return self.title
 
+
 class UserQuestion(models.Model):
     user = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
     question = models.ForeignKey(Question, models.SET_NULL, blank=True, null=True)
